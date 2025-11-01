@@ -341,5 +341,15 @@ footer {
         max-width: 100%;  /* les images s’adaptent à l’écran */
         height: auto;
     }
+  nav ul {
+        flex-direction: column; /* les items passent en colonne */
+        padding: 0;
+        margin: 0;
+    }
+    nav li {
+        margin: 5px 0; /* espace entre les liens */
+    }
 }
+}
+
 
