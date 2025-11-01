@@ -316,23 +316,27 @@ footer {
   }
 
   /* Section Necesitan Ayuda */
-  .llamado-accion {
-    padding: 30px 15px;
-  }
-
-  .llamado-accion .titulo {
-    font-size: 1.6rem !important; /* titre plus petit */
+ .llamado-accion .titulo {
+    font-size: 1.6rem;  /* réduire le titre */
   }
 
   .llamado-accion .subtitulo {
-    font-size: 1.1rem !important;
+    font-size: 1rem;   /* réduire le sous-titre */
   }
 
   .llamado-accion p {
-    font-size: 0.95rem !important;
+    font-size: 0.9rem; /* texte principal plus compact */
   }
 
   /* Hashtags */
+  /* Hashtag */
+  #hashtag h2 {
+    font-size: 1.5rem;  /* plus petit que 2rem pour ne pas dépasser */
+  }
+
+  #hashtag p {
+    font-size: 0.9rem;  /* texte plus petit pour tenir dans le cadre */
+  }
   .hashtag-share {
     flex-wrap: wrap;
     gap: 6px;
@@ -358,6 +362,7 @@ footer {
     padding: 5px 7px;
   }
 }
+
 
 
 
