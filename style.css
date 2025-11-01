@@ -341,15 +341,20 @@ footer {
         max-width: 100%;  /* les images s’adaptent à l’écran */
         height: auto;
     }
-  nav ul {
+
+    /* Menu vertical sur mobile */
+    nav ul {
+        display: flex;
         flex-direction: column; /* les items passent en colonne */
+        align-items: flex-start; /* aligner les liens à gauche */
         padding: 0;
         margin: 0;
     }
     nav li {
-        margin: 5px 0; /* espace entre les liens */
+        margin: 5px 0; /* espace entre chaque lien */
     }
 }
-}
+
+
 
 
