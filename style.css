@@ -299,6 +299,7 @@ footer {
   body {
     padding: 10px;
     overflow-x: hidden; /* empêche tout dépassement horizontal */
+    font-size: 16px; /* texte plus confortable */
   }
 
   body > * {
@@ -308,6 +309,7 @@ footer {
 
   header {
     padding: 25px 15px;
+    text-align: center;
   }
 
   header h1 {
@@ -332,7 +334,7 @@ footer {
   }
 
   .llamado-accion .titulo {
-    font-size: 2rem;
+    font-size: 2rem; /* "Necesitan ayuda" plus compact */
   }
 
   .llamado-accion .subtitulo {
@@ -351,9 +353,10 @@ footer {
 
   .banniere img {
     width: 100px;
+    height: auto;
   }
 
-  /* 🌸 Navigation plus douce */
+  /* 🌸 Navigation mobile compacte et esthétique */
   nav ul {
     flex-wrap: wrap;
     gap: 10px;
@@ -365,13 +368,36 @@ footer {
     padding: 6px 8px;
   }
 
-  /* Ajustement des hashtags ou boutons */
+  /* Hashtags et boutons dans le cadre */
+  .hashtag-share {
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+  }
+
   .hashtag-share a,
   .botones-accion a {
-    font-size: 0.9rem;
-    padding: 8px 14px;
+    font-size: 0.85rem;
+    padding: 6px 12px;
+    max-width: 100%;
+    white-space: nowrap;
+  }
+
+  /* Section privacy & autres containers */
+  .privacy-container {
+    padding: 30px 15px;
+  }
+
+  .privacy-container h1 {
+    font-size: 2rem;
+  }
+
+  .privacy-container h2 {
+    font-size: 1.2rem;
   }
 }
+
+
 
 
 
