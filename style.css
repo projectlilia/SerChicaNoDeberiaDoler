@@ -82,7 +82,6 @@ header p {
   opacity: 0.9;
 }
 
-/* --- Hashtag Desktop --- */
 #hashtag {
   text-align: center;
   background: #eef2ff;
@@ -294,6 +293,45 @@ footer {
   margin-top: 10px;
 }
 
+/* Responsive */
+@media (max-width: 600px) {
+  body > * {
+    padding: 20px 25px;
+    margin-bottom: 25px;
+  }
+  header h1 {
+    font-size: 2.2rem;
+  }
+  section h2 {
+    font-size: 1.5rem;
+  }
+  section p, ul li {
+    font-size: 1rem;
+  }
+}
+
+.privacy-container {
+  background-color: #f9fafb; /* un gris très clair */
+  padding: 50px 40px;
+  border-radius: 12px;
+}
+
+.privacy-container h1 {
+  color: #4f46e5; /* violet du site */
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.privacy-container h2 {
+  color: #1f2937; /* gris foncé pour lisibilité */
+  font-size: 1.5rem;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+
+
 /* --- AJUSTEMENTS GLOBAUX MOBILE FLUIDE --- */
 @media (max-width: 600px) {
 
@@ -427,6 +465,7 @@ footer {
   }
 
 }
+
 
 
 
