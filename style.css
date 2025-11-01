@@ -329,32 +329,72 @@ footer {
   margin-top: 30px;
   margin-bottom: 15px;
 }
+
 /* Pour les écrans de moins de 600px (téléphones) */
 @media only screen and (max-width: 600px) {
     body {
         font-size: 16px;  /* ajuste la taille du texte pour mobile */
     }
+
     .container {
         padding: 10px;  /* plus d’espace sur les côtés */
     }
+
     img {
         max-width: 100%;  /* les images s’adaptent à l’écran */
         height: auto;
     }
 
-    /* Menu vertical sur mobile */
-    nav ul {
-        display: flex;
-        flex-direction: column; /* les items passent en colonne */
-        align-items: flex-start; /* aligner les liens à gauche */
-        padding: 0;
-        margin: 0;
+    /* ---- NAVIGATION ---- */
+    .menu-toggle {
+        display: block;  /* affiche le bouton ☰ sur mobile */
+        font-size: 26px;
+        cursor: pointer;
+        color: #333; /* couleur de l’icône */
     }
-    nav li {
-        margin: 5px 0; /* espace entre chaque lien */
+
+    .nav-list {
+        display: none;  /* menu caché au départ */
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* sous la barre */
+        left: 0;
+        width: 100%;
+        background-color: #fff; /* fond blanc */
+        border-top: 1px solid #ccc;
+        padding: 10px 0;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        z-index: 10;
+    }
+
+    .nav-list.active {
+        display: flex;  /* s’affiche quand on clique sur ☰ */
+    }
+
+    .nav-list li {
+        text-align: center;
+        margin: 10px 0;
+        list-style: none;
+    }
+
+    .nav-list a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        font-size: 18px;
+        display: block;
+        padding: 5px 0;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #ffffff;
+        padding: 10px 20px;
+        position: relative;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
 }
-
-
 
 
