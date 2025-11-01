@@ -91,12 +91,47 @@ header p {
   margin-bottom: 40px;
 }
 
-/* Ajustement des hashtags ou boutons */
-  .hashtag-share a,
-  .botones-accion a {
-    font-size: 0.9rem;
-    padding: 8px 14px;
-  }
+#hashtag {
+  text-align: center;
+  background: #eef2ff;
+  padding: 40px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  margin-bottom: 40px;
+}
+
+#hashtag h2 {
+  font-size: 2rem;
+  color: #4f46e5;
+  margin-bottom: 15px;
+}
+
+#hashtag p {
+  font-size: 1.1rem;
+  color: #374151;
+  margin-bottom: 20px;
+}
+
+.hashtag-share {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.hashtag-share a {
+  background-color: #4f46e5;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.hashtag-share a:hover {
+  background-color: #3730a3;
+}
 
 section h2 {
   font-size: 1.6rem;
@@ -377,19 +412,11 @@ footer {
     padding: 6px 12px;
   }
 
-  #hashtag {
-    padding: 20px 12px;
-  }
-
-  #hashtag h2 {
-    font-size: 1.3rem;
-    line-height: 1.2;
-    margin-bottom: 8px;
-  }
-
-  #hashtag p {
+ /* Ajustement des hashtags ou boutons */
+  .hashtag-share a,
+  .botones-accion a {
     font-size: 0.9rem;
-  }
+    padding: 8px 14px;
 
   /* Testimonio */
   .testimonio {
@@ -407,6 +434,7 @@ footer {
   }
 
 }
+
 
 
 
