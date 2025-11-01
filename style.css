@@ -330,71 +330,44 @@ footer {
   margin-bottom: 15px;
 }
 
-/* Pour les écrans de moins de 600px (téléphones) */
-@media only screen and (max-width: 600px) {
-    body {
-        font-size: 16px;  /* ajuste la taille du texte pour mobile */
-    }
+/* --- VERSION MOBILE AMÉLIORÉE (≤ 600px) --- */
+@media (max-width: 600px) {
+  body > * {
+    padding: 20px 25px;
+    margin-bottom: 25px;
+  }
 
-    .container {
-        padding: 10px;  /* plus d’espace sur les côtés */
-    }
+  header h1 {
+    font-size: 2.2rem;
+  }
 
-    img {
-        max-width: 100%;  /* les images s’adaptent à l’écran */
-        height: auto;
-    }
+  section h2 {
+    font-size: 1.5rem;
+  }
 
-    /* ---- NAVIGATION ---- */
-    .menu-toggle {
-        display: block;  /* affiche le bouton ☰ sur mobile */
-        font-size: 26px;
-        cursor: pointer;
-        color: #333; /* couleur de l’icône */
-    }
+  section p, ul li {
+    font-size: 1rem;
+  }
 
-    .nav-list {
-        display: none;  /* menu caché au départ */
-        flex-direction: column;
-        position: absolute;
-        top: 60px; /* sous la barre */
-        left: 0;
-        width: 100%;
-        background-color: #fff; /* fond blanc */
-        border-top: 1px solid #ccc;
-        padding: 10px 0;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        z-index: 10;
-    }
+  /* 🌸 Ajuste juste le menu sur mobile */
+  nav ul {
+    flex-wrap: wrap; /* Les liens se mettent sur 2 lignes si besoin */
+    gap: 15px; /* espace entre les liens */
+    justify-content: center; /* garde les liens centrés */
+  }
 
-    .nav-list.active {
-        display: flex;  /* s’affiche quand on clique sur ☰ */
-    }
+  nav a {
+    font-size: 0.95rem;
+    padding: 6px 10px;
+    border-bottom: none; /* enlève la ligne si c’est trop épais */
+  }
 
-    .nav-list li {
-        text-align: center;
-        margin: 10px 0;
-        list-style: none;
-    }
-
-    .nav-list a {
-        text-decoration: none;
-        color: #333;
-        font-weight: bold;
-        font-size: 18px;
-        display: block;
-        padding: 5px 0;
-    }
-
-    .navbar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: #ffffff;
-        padding: 10px 20px;
-        position: relative;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
+  nav a:hover {
+    border-bottom: 2px solid #4f46e5; /* garde ton effet d’origine au survol */
+  }
 }
+
+
+
 
 
