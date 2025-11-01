@@ -293,109 +293,72 @@ footer {
   margin-top: 10px;
 }
 
-/* --- AJUSTEMENTS GLOBAUX POUR MOBILE --- */
+/* --- AJUSTEMENTS SPÉCIFIQUES POUR MOBILE --- */
 @media (max-width: 600px) {
 
   body {
     padding: 10px;
     overflow-x: hidden; /* empêche tout dépassement horizontal */
-    font-size: 16px; /* texte plus confortable */
+    font-size: 15px;
   }
 
   body > * {
-    padding: 15px 18px;
+    padding: 12px 15px;
     margin-bottom: 20px;
   }
 
-  header {
-    padding: 25px 15px;
-    text-align: center;
-  }
-
   header h1 {
-    font-size: 1.8rem; /* plus compact */
+    font-size: 1.6rem; /* encore plus petit pour mobile */
   }
 
   header p {
-    font-size: 1rem;
-  }
-
-  section h2 {
-    font-size: 1.3rem;
-  }
-
-  section p, ul li {
     font-size: 0.95rem;
-    line-height: 1.5; /* meilleur confort de lecture */
   }
 
+  /* Section Necesitan Ayuda */
   .llamado-accion {
-    padding: 40px 20px;
+    padding: 30px 15px;
   }
 
   .llamado-accion .titulo {
-    font-size: 2rem; /* "Necesitan ayuda" plus compact */
+    font-size: 1.6rem !important; /* titre plus petit */
   }
 
   .llamado-accion .subtitulo {
-    font-size: 1.3rem;
+    font-size: 1.1rem !important;
   }
 
   .llamado-accion p {
-    font-size: 1rem;
+    font-size: 0.95rem !important;
   }
 
-  .banniere {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .banniere img {
-    width: 100px;
-    height: auto;
-  }
-
-  /* 🌸 Navigation mobile compacte et esthétique */
-  nav ul {
+  /* Hashtags */
+  .hashtag-share {
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 6px;
     justify-content: center;
   }
 
-  nav a {
-    font-size: 0.9rem;
-    padding: 6px 8px;
+  .hashtag-share a {
+    font-size: 0.8rem !important;
+    padding: 5px 10px !important;
+    max-width: 100%;
+    white-space: nowrap;
   }
 
-  /* Hashtags et boutons dans le cadre */
-  .hashtag-share {
+  /* Navigation mobile */
+  nav ul {
     flex-wrap: wrap;
     gap: 8px;
     justify-content: center;
   }
 
-  .hashtag-share a,
-  .botones-accion a {
+  nav a {
     font-size: 0.85rem;
-    padding: 6px 12px;
-    max-width: 100%;
-    white-space: nowrap;
-  }
-
-  /* Section privacy & autres containers */
-  .privacy-container {
-    padding: 30px 15px;
-  }
-
-  .privacy-container h1 {
-    font-size: 2rem;
-  }
-
-  .privacy-container h2 {
-    font-size: 1.2rem;
+    padding: 5px 7px;
   }
 }
+
 
 
 
