@@ -330,7 +330,6 @@ footer {
   margin-bottom: 15px;
 }
 
-}
 
 /* --- AJUSTEMENTS GLOBAUX MOBILE FLUIDE --- */
 @media (max-width: 600px) {
@@ -441,12 +440,6 @@ footer {
     padding: 6px 12px;
   }
 
- /* Ajustement des hashtags ou boutons */
-  .hashtag-share a,
-  .botones-accion a {
-    font-size: 0.9rem;
-    padding: 8px 14px;
-
   /* Testimonio */
   .testimonio {
     padding: 15px 12px;
@@ -463,6 +456,7 @@ footer {
   }
 
 }
+
 
 
 
