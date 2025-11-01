@@ -91,38 +91,12 @@ header p {
   margin-bottom: 40px;
 }
 
-#hashtag h2 {
-  font-size: 2rem;
-  color: #4f46e5;
-  margin-bottom: 15px;
-}
-
-#hashtag p {
-  font-size: 1.1rem;
-  color: #374151;
-  margin-bottom: 20px;
-}
-
-.hashtag-share {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  flex-wrap: wrap;
-}
-
-.hashtag-share a {
-  background-color: #4f46e5;
-  color: white;
-  padding: 10px 16px;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: background-color 0.3s ease;
-}
-
-.hashtag-share a:hover {
-  background-color: #3730a3;
-}
+/* Ajustement des hashtags ou boutons */
+  .hashtag-share a,
+  .botones-accion a {
+    font-size: 0.9rem;
+    padding: 8px 14px;
+  }
 
 section h2 {
   font-size: 1.6rem;
@@ -433,6 +407,7 @@ footer {
   }
 
 }
+
 
 
 
