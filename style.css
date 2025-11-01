@@ -293,40 +293,85 @@ footer {
   margin-top: 10px;
 }
 
-/* Responsive */
+/* --- AJUSTEMENTS GLOBAUX POUR MOBILE --- */
 @media (max-width: 600px) {
+
+  body {
+    padding: 10px;
+    overflow-x: hidden; /* empêche tout dépassement horizontal */
+  }
+
   body > * {
-    padding: 20px 25px;
-    margin-bottom: 25px;
+    padding: 15px 18px;
+    margin-bottom: 20px;
   }
+
+  header {
+    padding: 25px 15px;
+  }
+
   header h1 {
-    font-size: 2.2rem;
+    font-size: 1.8rem; /* plus compact */
   }
-  section h2 {
-    font-size: 1.5rem;
-  }
-  section p, ul li {
+
+  header p {
     font-size: 1rem;
   }
+
+  section h2 {
+    font-size: 1.3rem;
+  }
+
+  section p, ul li {
+    font-size: 0.95rem;
+    line-height: 1.5; /* meilleur confort de lecture */
+  }
+
+  .llamado-accion {
+    padding: 40px 20px;
+  }
+
+  .llamado-accion .titulo {
+    font-size: 2rem;
+  }
+
+  .llamado-accion .subtitulo {
+    font-size: 1.3rem;
+  }
+
+  .llamado-accion p {
+    font-size: 1rem;
+  }
+
+  .banniere {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .banniere img {
+    width: 100px;
+  }
+
+  /* 🌸 Navigation plus douce */
+  nav ul {
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  nav a {
+    font-size: 0.9rem;
+    padding: 6px 8px;
+  }
+
+  /* Ajustement des hashtags ou boutons */
+  .hashtag-share a,
+  .botones-accion a {
+    font-size: 0.9rem;
+    padding: 8px 14px;
+  }
 }
 
-.privacy-container {
-  background-color: #f9fafb; /* un gris très clair */
-  padding: 50px 40px;
-  border-radius: 12px;
-}
 
-.privacy-container h1 {
-  color: #4f46e5; /* violet du site */
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.privacy-container h2 {
-  color: #1f2937; /* gris foncé pour lisibilité */
-  font-size: 1.5rem;
-  margin-top: 30px;
-  margin-bottom: 15px;
-}
 
