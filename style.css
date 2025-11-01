@@ -293,86 +293,148 @@ footer {
   margin-top: 10px;
 }
 
-/* --- AJUSTEMENTS GLOBAUX POUR MOBILE --- */
+/* --- AJUSTEMENTS GLOBAUX MOBILE FLUIDE --- */
 @media (max-width: 600px) {
 
+  /* Corps de la page */
   body {
     padding: 10px;
+    margin: 0;
     overflow-x: hidden; /* empêche tout dépassement horizontal */
+    font-size: 0.95rem; /* taille globale plus petite */
+    line-height: 1.5;
   }
 
   body > * {
-    padding: 15px 18px;
+    width: 100%;
+    max-width: 100%;
+    padding: 15px 12px;
     margin-bottom: 20px;
+    box-sizing: border-box;
   }
 
+  /* Header */
   header {
-    padding: 25px 15px;
+    padding: 20px 10px;
+    text-align: center;
   }
 
   header h1 {
-    font-size: 1.8rem; /* plus compact */
+    font-size: 1.6rem;
+    line-height: 1.3;
+    margin-bottom: 8px;
   }
 
   header p {
-    font-size: 1rem;
-  }
-
-  section h2 {
-    font-size: 1.3rem;
-  }
-
-  section p,
-  ul li {
     font-size: 0.95rem;
-    line-height: 1.5; /* meilleur confort de lecture */
   }
 
+  /* Sections */
+  section h2 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+  }
+
+  section p, ul li {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+  ul {
+    padding-left: 18px;
+  }
+
+  /* Llamado a la acción */
   .llamado-accion {
-    padding: 40px 20px;
+    padding: 25px 15px;
+    max-width: 100%;
+    border-radius: 12px;
   }
 
   .llamado-accion .titulo {
-    font-size: 2rem;
+    font-size: 1.6rem;
+    line-height: 1.2;
+    margin-bottom: 10px;
   }
 
   .llamado-accion .subtitulo {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
+    margin-bottom: 12px;
   }
 
   .llamado-accion p {
-    font-size: 1rem;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
   }
 
+  /* Bannières (Unicef etc.) */
   .banniere {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    gap: 10px;
   }
 
   .banniere img {
-    width: 100px;
+    width: 90px;
+    height: auto;
+    margin-bottom: 10px;
   }
 
-  /* 🌸 Navigation plus douce */
+  /* Navigation */
   nav ul {
+    flex-direction: row;
     flex-wrap: wrap;
-    gap: 10px;
     justify-content: center;
+    gap: 8px;
+    padding: 0;
+    margin: 0;
   }
 
   nav a {
-    font-size: 0.9rem;
-    padding: 6px 8px;
+    font-size: 0.85rem;
+    padding: 5px 8px;
   }
 
-  /* Ajustement des hashtags ou boutons */
+  /* Hashtags et boutons */
   .hashtag-share a,
   .botones-accion a {
-    font-size: 0.9rem;
-    padding: 8px 14px;
+    font-size: 0.85rem;
+    padding: 6px 12px;
   }
+
+  #hashtag {
+    padding: 20px 12px;
+  }
+
+  #hashtag h2 {
+    font-size: 1.3rem;
+    line-height: 1.2;
+    margin-bottom: 8px;
+  }
+
+  #hashtag p {
+    font-size: 0.9rem;
+  }
+
+  /* Testimonio */
+  .testimonio {
+    padding: 15px 12px;
+    font-size: 0.88rem;
+    line-height: 1.35;
+  }
+
+  .testimonio-img {
+    float: none;
+    display: block;
+    margin: 0 auto 8px auto;
+    width: 50px;
+    height: 50px;
+  }
+
 }
+
+
 
 
 
